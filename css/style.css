@@ -3,3 +3,59 @@
   margin: 0;
   padding: 0;
 }
+
+.box{
+ height: 300px;
+ width: 500px;
+ position: relative;
+ margin: auto;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ cursor: pointer;
+}
+
+#first{
+ background-image: url(../img/roma.jpeg);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+#second{
+ background-image: url(../img/copenaghen.jpeg);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+#third{
+ background-image: url(../img/tokyo.jpeg);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.background{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.7);
+}
+
+.city{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ font-size: 50px;
+ color: white;
+}
+
+.hover{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(255,255,255,0.3);
+ display: none;
+}
+
+.box:hover .hover{
+ display: block;
+}
